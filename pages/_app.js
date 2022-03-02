@@ -1,7 +1,9 @@
-import "../assets/css/style.css";
-import "../assets/css/plugins.css";
-import "../assets/css/responsive.css";
+
 import "../assets/css/font-icons.css";
+import "../assets/css/plugins.css";
+import "../assets/css/style.css";
+import "../assets/css/responsive.css";
+
 import Script from "next/script";
 // import extrascript from "../assets/js/plugins";
 

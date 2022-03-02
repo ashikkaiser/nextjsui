@@ -46,12 +46,12 @@ class BannerV2 extends Component {
                             </p>
                           </div>
                           <div className="btn-wrapper animated">
-                            <Link
+                            <a
                               href="/about"
-                              className="theme-btn-1 btn btn-effect-1"
+                              className="theme-btn-1 btn btn-effect-1 go-top"
                             >
                               Make An Enquiry
-                            </Link>
+                            </a>
                             <a
                               className="ltn__video-play-btn bg-white"
                               href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&showinfo=0"
@@ -107,18 +107,18 @@ class BannerV2 extends Component {
                             </p>
                           </div>
                           <div className="btn-wrapper animated">
-                            <Link
+                            <a
                               href="/service"
                               className="theme-btn-1 btn btn-effect-1"
                             >
                               OUR SERVICES
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                               href="/about"
                               className="btn btn-transparent btn-effect-3"
                             >
                               LEARN MORE
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -167,18 +167,18 @@ class BannerV2 extends Component {
                             </p>
                           </div>
                           <div className="btn-wrapper animated">
-                            <Link
+                            <a
                               href="/service"
                               className="theme-btn-1 btn btn-effect-1"
                             >
                               OUR SERVICES
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                               href="/about"
                               className="btn btn-transparent btn-effect-3"
                             >
                               LEARN MORE
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -227,18 +227,18 @@ class BannerV2 extends Component {
                             </p>
                           </div>
                           <div className="btn-wrapper animated">
-                            <Link
+                            <a
                               href="/service"
                               className="theme-btn-1 btn btn-effect-1"
                             >
                               OUR SERVICES
-                            </Link>
-                            <Link
+                            </a>
+                            <a
                               href="/about"
                               className="btn btn-transparent btn-effect-3"
                             >
                               LEARN MORE
-                            </Link>
+                            </a>
                           </div>
                         </div>
                       </div>

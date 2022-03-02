@@ -137,9 +137,9 @@ class NavbarV2 extends Component {
                           <li>
                             <a href="/contact">Contact</a>
                           </li>
-                          {/* <li className="special-link">
-                            <Link href="/add-listing">Add Listing</Link>
-                          </li> */}
+                          <li className="special-link">
+                            <Link href="#">Add Listing</Link>
+                          </li>
                         </ul>
                       </div>
                     </nav>
