@@ -6,7 +6,7 @@ class Checkout extends Component {
 
     render() {
 
-        let publicUrl = '/'
+        let publicUrl = process.env.PUBLIC_URL+'/'
 
     return <div className="ltn__checkout-area mb-105">
 				<div className="container">

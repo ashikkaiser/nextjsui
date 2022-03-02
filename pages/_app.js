@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       <div className="page-wrapper">
         <Component {...pageProps} />
       </div>
+
       <Script
         id="plugin"
         // strategy="afterInteractive"
@@ -30,6 +31,17 @@ function MyApp({ Component, pageProps }) {
           __html: process.env.rawJsFromFileMain,
         }}
       />
+      {/* <Script
+        id="stripe-js"
+        src="/assets/js/plugins.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="stripe-jsx"
+        src="/assets/js/main.js"
+        strategy="beforeInteractive"
+
+      /> */}
     </>
   );
 }

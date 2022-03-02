@@ -6,7 +6,7 @@ class MyAccount extends Component {
 
     render() {
 
-        let publicUrl = '/'
+        let publicUrl = process.env.PUBLIC_URL+'/'
 
     return <div className="liton__wishlist-area pb-70">
 	  <div className="container">

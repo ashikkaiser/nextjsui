@@ -7,7 +7,7 @@ class OrderTracking extends Component {
   render() {
    let anchor = '#'
    let imagealt = 'image'
-   let publicUrl = '/'
+   let publicUrl = process.env.PUBLIC_URL+'/'
     return (
 		<div className="ltn__login-area mb-120">
 			<div className="container">

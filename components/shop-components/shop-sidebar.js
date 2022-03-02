@@ -7,7 +7,7 @@ class Sidebar extends Component {
   render() {
    let anchor = '#'
    let imagealt = 'image'
-   let publicUrl = '/'
+   let publicUrl = process.env.PUBLIC_URL+'/'
     return (
 		<div className="col-lg-4  mb-100">
 			<aside className="sidebar ltn__shop-sidebar">

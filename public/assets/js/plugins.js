@@ -28,7 +28,6 @@
   1. Avoid `console` errors in browsers that lack a console.
 ---------------------------------------------------------------*/
 (function () {
-  console.log("script Loaded");
   var method;
   var noop = function () {};
   var methods = [

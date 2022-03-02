@@ -367,7 +367,7 @@ font-family: 'Poppins', sans-serif;
   --youtube: #cb2027;
   --email: #f89a1e;
 }
-a{
+a {
   text-decoration: none !important;
 }
 /* -------------------------------------
@@ -472,7 +472,7 @@ a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
+  text-decoration: none !important;
   outline: none;
   color: inherit;
 }

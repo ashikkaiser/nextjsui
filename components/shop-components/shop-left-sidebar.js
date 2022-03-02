@@ -7,7 +7,7 @@ class ShopGridV1 extends Component {
 
     render() {
 
-        let publicUrl = '/'
+        let publicUrl = process.env.PUBLIC_URL+'/'
 
     return <div>
 			<div className="ltn__product-area ltn__product-gutter">
