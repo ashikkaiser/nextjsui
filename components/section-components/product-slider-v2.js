@@ -1,10 +1,81 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import parse from "html-react-parser";
+import Slider from "react-slick";
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style }}
+      onClick={onClick}
+    >
+      <i class="fas fa-arrow-right" alt="Arrow Icon"></i>
+    </div>
+  );
+}
 
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, }}
+      onClick={onClick}
+    >
+      <i class="fas fa-arrow-left" alt="Arrow Icon"></i>
+    </div>
+  );
+}
 class ProductSliderV2 extends Component {
   render() {
     let publicUrl = "/";
+    const setting = {
+      arrows: true,
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: <PrevArrow />,
+      nextArrow: <NextArrow />,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    }
 
     return (
       <div
@@ -25,7 +96,7 @@ class ProductSliderV2 extends Component {
               </div>
             </div>
           </div>
-          <div className="row ltn__search-by-place-slider-1-active slick-arrow-1 go-top">
+          <Slider {...setting} className="row ltn__search-by-place-slider-1-active slick-arrow-1 go-top">
             <div className="col-lg-4">
               <div className="ltn__search-by-place-item">
                 <div className="search-by-place-img">
@@ -164,7 +235,7 @@ class ProductSliderV2 extends Component {
               </div>
             </div>
             {/*  */}
-          </div>
+          </Slider>
         </div>
       </div>
     );

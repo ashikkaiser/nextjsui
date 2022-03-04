@@ -26,13 +26,13 @@ function MyApp({ Component, pageProps }) {
           __html: process.env.rawJsFromFile,
         }}
       />
-      <Script
+      {/* <Script
         id="main"
         // strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: process.env.rawJsFromFileMain,
         }}
-      />
+      /> */}
       {/* <Script
         id="stripe-js"
         src="/assets/js/plugins.js"

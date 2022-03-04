@@ -408,111 +408,111 @@
           /*----------------------
               Slider 11 active
           -----------------------*/
-          $('.ltn__slider-11-active').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
-              var i = (currentSlide ? currentSlide : 0) + 1;
-              $('.ltn__slider-11-pagination-count .count').text('0'+i);
-              $('.ltn__slider-11-pagination-count .total').text('0' + slick.slideCount);
+        //   $('.ltn__slider-11-active').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+        //       var i = (currentSlide ? currentSlide : 0) + 1;
+        //       $('.ltn__slider-11-pagination-count .count').text('0'+i);
+        //       $('.ltn__slider-11-pagination-count .total').text('0' + slick.slideCount);
   
-              $('.ltn__slider-11-slide-item-count .count').text('0'+i);
-              $('.ltn__slider-11-slide-item-count .total').text('/0' + slick.slideCount);
-              new WOW().init();
-          }).slick({
-              dots: false, /* slider left or right side pagination count with line */
-              arrows: false, /* slider arrow  */
-              appendDots: '.ltn__slider-11-pagination-count',
-              infinite: true,
-              autoplay: false,
-              autoplaySpeed: 10000,
-              speed: 500,
-              asNavFor: '.ltn__slider-11-img-slide-arrow-active',
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              prevArrow: '<a class="slick-prev"><i class="fas fa-arrow-left" alt="Arrow Icon"></i></a>',
-              nextArrow: '<a class="slick-next"><i class="fas fa-arrow-right" alt="Arrow Icon"></i></a>',
-              responsive: [
-                  {
-                      breakpoint: 1600,
-                      settings: {
-                          slidesToShow: 1,
-                          slidesToScroll: 1,
-                          arrows: false,
-                          dots: false
-                      }
-                  },
-                  {
-                      breakpoint: 992,
-                      settings: {
-                          slidesToShow: 1,
-                          slidesToScroll: 1,
-                          arrows: false,
-                          dots: false
-                      }
-                  },
-                  {
-                      breakpoint: 768,
-                      settings: {
-                          slidesToShow: 1,
-                          slidesToScroll: 1,
-                          arrows: false,
-                          dots: false
-                      }
-                  },
-                  {
-                      breakpoint: 575,
-                      settings: {
-                          arrows: false,
-                          dots: false,
-                          slidesToShow: 1,
-                          slidesToScroll: 1
-                      }
-                  }
-              ]
-          });
+        //       $('.ltn__slider-11-slide-item-count .count').text('0'+i);
+        //       $('.ltn__slider-11-slide-item-count .total').text('/0' + slick.slideCount);
+        //       new WOW().init();
+        //   }).slick({
+        //       dots: false, /* slider left or right side pagination count with line */
+        //       arrows: false, /* slider arrow  */
+        //       appendDots: '.ltn__slider-11-pagination-count',
+        //       infinite: true,
+        //       autoplay: false,
+        //       autoplaySpeed: 10000,
+        //       speed: 500,
+        //       asNavFor: '.ltn__slider-11-img-slide-arrow-active',
+        //       slidesToShow: 1,
+        //       slidesToScroll: 1,
+        //       prevArrow: '<a class="slick-prev"><i class="fas fa-arrow-left" alt="Arrow Icon"></i></a>',
+        //       nextArrow: '<a class="slick-next"><i class="fas fa-arrow-right" alt="Arrow Icon"></i></a>',
+        //       responsive: [
+        //           {
+        //               breakpoint: 1600,
+        //               settings: {
+        //                   slidesToShow: 1,
+        //                   slidesToScroll: 1,
+        //                   arrows: false,
+        //                   dots: false
+        //               }
+        //           },
+        //           {
+        //               breakpoint: 992,
+        //               settings: {
+        //                   slidesToShow: 1,
+        //                   slidesToScroll: 1,
+        //                   arrows: false,
+        //                   dots: false
+        //               }
+        //           },
+        //           {
+        //               breakpoint: 768,
+        //               settings: {
+        //                   slidesToShow: 1,
+        //                   slidesToScroll: 1,
+        //                   arrows: false,
+        //                   dots: false
+        //               }
+        //           },
+        //           {
+        //               breakpoint: 575,
+        //               settings: {
+        //                   arrows: false,
+        //                   dots: false,
+        //                   slidesToShow: 1,
+        //                   slidesToScroll: 1
+        //               }
+        //           }
+        //       ]
+        //   });
   
-          $('.ltn__slider-11-img-slide-arrow-active').slick({
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              initialSlide: 2,
-              centerMode: false,
-              centerPadding: '0px',
-              asNavFor: '.ltn__slider-11-active',
-              dots: false, /* image slide dots */
-              arrows: false, /* image slide arrow */
-              centerMode: true,
-              focusOnSelect: true,
-              prevArrow: '<a class="slick-prev"><i class="fas fa-arrow-left" alt="Arrow Icon"></i></a>',
-              nextArrow: '<a class="slick-next"><i class="fas fa-arrow-right" alt="Arrow Icon"></i></a>',
-              responsive: [
-                  {
-                      breakpoint: 1600,
-                      settings: {
-                          arrows: false,
-                          dots: false
-                      }
-                  },
-                  {
-                      breakpoint: 1200,
-                      settings: {
-                          arrows: true,
-                          dots: false
-                      }
-                  },
-                  {
-                      breakpoint: 768,
-                      settings: {
-                          arrows: true,
-                          dots: false
-                      }
-                  },
-                  {
-                      breakpoint: 575,
-                      settings: {
-                          arrows: true,
-                          dots: false,
-                      }
-                  }
-              ]
-          });
+        //   $('.ltn__slider-11-img-slide-arrow-active').slick({
+        //       slidesToShow: 3,
+        //       slidesToScroll: 1,
+        //       initialSlide: 2,
+        //       centerMode: false,
+        //       centerPadding: '0px',
+        //       asNavFor: '.ltn__slider-11-active',
+        //       dots: false, /* image slide dots */
+        //       arrows: false, /* image slide arrow */
+        //       centerMode: true,
+        //       focusOnSelect: true,
+        //       prevArrow: '<a class="slick-prev"><i class="fas fa-arrow-left" alt="Arrow Icon"></i></a>',
+        //       nextArrow: '<a class="slick-next"><i class="fas fa-arrow-right" alt="Arrow Icon"></i></a>',
+        //       responsive: [
+        //           {
+        //               breakpoint: 1600,
+        //               settings: {
+        //                   arrows: false,
+        //                   dots: false
+        //               }
+        //           },
+        //           {
+        //               breakpoint: 1200,
+        //               settings: {
+        //                   arrows: true,
+        //                   dots: false
+        //               }
+        //           },
+        //           {
+        //               breakpoint: 768,
+        //               settings: {
+        //                   arrows: true,
+        //                   dots: false
+        //               }
+        //           },
+        //           {
+        //               breakpoint: 575,
+        //               settings: {
+        //                   arrows: true,
+        //                   dots: false,
+        //               }
+        //           }
+        //       ]
+        //   });
   
           /* --------------------------------------------------------
               16-1. Product Slider One

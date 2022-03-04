@@ -118,24 +118,24 @@ class NavbarV2 extends Component {
                       <div className="ltn__main-menu">
                         <ul>
                           <li className="menu-icon">
-                            <a href="/">Home</a>
+                            <Link href="/">Home</Link>
 
                           </li>
                           <li className="menu-icon">
-                            <a href="/about">About</a>
+                            <Link href="/about">About</Link>
 
                           </li>
                           <li className="menu-icon">
-                            <a href="/shop">Shop</a>
+                            <Link href="/shop">Shop</Link>
 
                           </li>
                           <li className="menu-icon">
-                            <a href="/product-details">Product Detials</a>
+                            <Link href="/product-details">Product Detials</Link>
                           </li>
 
 
                           <li>
-                            <a href="/contact">Contact</a>
+                            <Link href="/contact">Contact</Link>
                           </li>
                           <li className="special-link">
                             <Link href="#">Add Listing</Link>
