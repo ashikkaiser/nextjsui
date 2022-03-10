@@ -1,10 +1,88 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import parse from 'html-react-parser';
+import Slider from 'react-slick';
+function NextArrow(props) {
+	const { className, style, onClick } = props;
+	return (
+		<div
+			className={className}
+			style={{ ...style }}
+			onClick={onClick}
+		>
+			<i class="fas fa-arrow-right" alt="Arrow Icon"></i>
+		</div>
+	);
+}
 
+function PrevArrow(props) {
+	const { className, style, onClick } = props;
+	return (
+		<div
+			className={className}
+			style={{ ...style, }}
+			onClick={onClick}
+		>
+			<i class="fas fa-arrow-left" alt="Arrow Icon"></i>
+		</div>
+	);
+}
 class Testimonial extends Component {
 
+
+
 	render() {
+		const settings = {
+			arrows: true,
+			centerMode: false,
+			centerPadding: '80px',
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			prevArrow: <PrevArrow />,
+			nextArrow: <NextArrow />,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						arrows: false,
+						dots: true,
+						centerMode: false,
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+						dots: true,
+						centerMode: false,
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 580,
+					settings: {
+						arrows: false,
+						dots: true,
+						centerMode: false,
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		}
 
 		let publicUrl = '/'
 		let imagealt = 'image'
@@ -20,98 +98,100 @@ class Testimonial extends Component {
 					</div>
 				</div>
 				<div className="row ltn__testimonial-slider-5-active slick-arrow-1">
-					<div className="col-lg-4">
-						<div className="ltn__testimonial-item ltn__testimonial-item-7">
-							<div className="ltn__testimoni-info">
-								<p><i className="flaticon-left-quote-1" />
-									Precious ipsum dolor sit amet
-									consectetur adipisicing elit, sed dos
-									mod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad min
-									veniam, quis nostrud Precious ips
-									um dolor sit amet, consecte</p>
-								<div className="ltn__testimoni-info-inner">
-									<div className="ltn__testimoni-img">
-										<img src={publicUrl + "assets/img/testimonial/1.jpg"} alt="#" />
-									</div>
-									<div className="ltn__testimoni-name-designation">
-										<h5>Jacob William</h5>
-										<label>Selling Agents</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4">
-						<div className="ltn__testimonial-item ltn__testimonial-item-7">
-							<div className="ltn__testimoni-info">
-								<p><i className="flaticon-left-quote-1" />
-									Precious ipsum dolor sit amet
-									consectetur adipisicing elit, sed dos
-									mod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad min
-									veniam, quis nostrud Precious ips
-									um dolor sit amet, consecte</p>
-								<div className="ltn__testimoni-info-inner">
-									<div className="ltn__testimoni-img">
-										<img src={publicUrl + "assets/img/testimonial/2.jpg"} alt="#" />
-									</div>
-									<div className="ltn__testimoni-name-designation">
-										<h5>Kelian Anderson</h5>
-										<label>Selling Agents</label>
+					<Slider {...settings}>
+						<div className="col-lg-4">
+							<div className="ltn__testimonial-item ltn__testimonial-item-7">
+								<div className="ltn__testimoni-info">
+									<p><i className="flaticon-left-quote-1" />
+										Precious ipsum dolor sit amet
+										consectetur adipisicing elit, sed dos
+										mod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad min
+										veniam, quis nostrud Precious ips
+										um dolor sit amet, consecte</p>
+									<div className="ltn__testimoni-info-inner">
+										<div className="ltn__testimoni-img">
+											<img src={publicUrl + "assets/img/testimonial/1.jpg"} alt="#" />
+										</div>
+										<div className="ltn__testimoni-name-designation">
+											<h5>Jacob William</h5>
+											<label>Selling Agents</label>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div className="col-lg-4">
-						<div className="ltn__testimonial-item ltn__testimonial-item-7">
-							<div className="ltn__testimoni-info">
-								<p><i className="flaticon-left-quote-1" />
-									Precious ipsum dolor sit amet
-									consectetur adipisicing elit, sed dos
-									mod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad min
-									veniam, quis nostrud Precious ips
-									um dolor sit amet, consecte</p>
-								<div className="ltn__testimoni-info-inner">
-									<div className="ltn__testimoni-img">
-										<img src={publicUrl + "assets/img/testimonial/3.jpg"} alt="#" />
-									</div>
-									<div className="ltn__testimoni-name-designation">
-										<h5>Adam Joseph</h5>
-										<label>Selling Agents</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="col-lg-4">
-						<div className="ltn__testimonial-item ltn__testimonial-item-7">
-							<div className="ltn__testimoni-info">
-								<p><i className="flaticon-left-quote-1" />
-									Precious ipsum dolor sit amet
-									consectetur adipisicing elit, sed dos
-									mod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad min
-									veniam, quis nostrud Precious ips
-									um dolor sit amet, consecte</p>
-								<div className="ltn__testimoni-info-inner">
-									<div className="ltn__testimoni-img">
-										<img src={publicUrl + "assets/img/testimonial/4.jpg"} alt="#" />
-									</div>
-									<div className="ltn__testimoni-name-designation">
-										<h5>James Carter</h5>
-										<label>Selling Agents</label>
+						<div className="col-lg-4">
+							<div className="ltn__testimonial-item ltn__testimonial-item-7">
+								<div className="ltn__testimoni-info">
+									<p><i className="flaticon-left-quote-1" />
+										Precious ipsum dolor sit amet
+										consectetur adipisicing elit, sed dos
+										mod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad min
+										veniam, quis nostrud Precious ips
+										um dolor sit amet, consecte</p>
+									<div className="ltn__testimoni-info-inner">
+										<div className="ltn__testimoni-img">
+											<img src={publicUrl + "assets/img/testimonial/2.jpg"} alt="#" />
+										</div>
+										<div className="ltn__testimoni-name-designation">
+											<h5>Kelian Anderson</h5>
+											<label>Selling Agents</label>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					{/*  */}
+						<div className="col-lg-4">
+							<div className="ltn__testimonial-item ltn__testimonial-item-7">
+								<div className="ltn__testimoni-info">
+									<p><i className="flaticon-left-quote-1" />
+										Precious ipsum dolor sit amet
+										consectetur adipisicing elit, sed dos
+										mod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad min
+										veniam, quis nostrud Precious ips
+										um dolor sit amet, consecte</p>
+									<div className="ltn__testimoni-info-inner">
+										<div className="ltn__testimoni-img">
+											<img src={publicUrl + "assets/img/testimonial/3.jpg"} alt="#" />
+										</div>
+										<div className="ltn__testimoni-name-designation">
+											<h5>Adam Joseph</h5>
+											<label>Selling Agents</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4">
+							<div className="ltn__testimonial-item ltn__testimonial-item-7">
+								<div className="ltn__testimoni-info">
+									<p><i className="flaticon-left-quote-1" />
+										Precious ipsum dolor sit amet
+										consectetur adipisicing elit, sed dos
+										mod tempor incididunt ut labore et
+										dolore magna aliqua. Ut enim ad min
+										veniam, quis nostrud Precious ips
+										um dolor sit amet, consecte</p>
+									<div className="ltn__testimoni-info-inner">
+										<div className="ltn__testimoni-img">
+											<img src={publicUrl + "assets/img/testimonial/4.jpg"} alt="#" />
+										</div>
+										<div className="ltn__testimoni-name-designation">
+											<h5>James Carter</h5>
+											<label>Selling Agents</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{/*  */}
+					</Slider>
 				</div>
 			</div>
-		</div>
+		</div >
 
 	}
 }

@@ -7,11 +7,18 @@ import Slider from "react-slick";
 
 
 class BannerV2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false
+    }
+  }
+
   render() {
     let publicUrl = "/";
     let imagealt = "image";
     const settings1 = {
-     
+
       dots: false, /* slider left or right side pagination count with line */
       arrows: false, /* slider arrow  */
       // appendDots: '.ltn__slider-11-pagination-count',
@@ -143,6 +150,7 @@ class BannerV2 extends Component {
                       <div className="slide-item-info">
                         <div className="slide-item-info-inner ltn__slide-animation">
                           <div className="slide-video mb-50 d-none">
+
                             <a
                               className="ltn__video-icon-2 ltn__video-icon-2-border"
                               href="https://www.youtube.com/embed/tlThdr3O5Qo"

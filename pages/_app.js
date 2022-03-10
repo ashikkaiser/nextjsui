@@ -3,11 +3,17 @@ import "../assets/css/font-icons.css";
 import "../assets/css/plugins.css";
 import "../assets/css/style.css";
 import "../assets/css/responsive.css";
+import $ from "jquery"
 
 import Script from "next/script";
-// import extrascript from "../assets/js/plugins";
+
+
+
 
 function MyApp({ Component, pageProps }) {
+
+
+
   return (
     <>
       <div className="quarter-overlay">
@@ -27,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         }}
       />
       {/* <Script
-        id="main"
+        id="mainxxx"
         // strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: process.env.rawJsFromFileMain,
@@ -37,8 +43,8 @@ function MyApp({ Component, pageProps }) {
         id="stripe-js"
         src="/assets/js/plugins.js"
         strategy="beforeInteractive"
-      />
-      <Script
+      /> */}
+      {/* <Script
         id="stripe-jsx"
         src="/assets/js/main.js"
         strategy="beforeInteractive"
