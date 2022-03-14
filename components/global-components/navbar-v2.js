@@ -3,6 +3,13 @@ import Link from "next/link";
 import Social from "../section-components/social";
 
 class NavbarV2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobileOpen: false
+    }
+  }
+
   render() {
     let publicUrl = "/";
     let CustomClass = this.props.CustomClass ? this.props.CustomClass : "";
@@ -147,10 +154,13 @@ class NavbarV2 extends Component {
                 </div>
                 <div className="col--- ltn__header-options ltn__header-options-2 ">
                   {/* Mobile Menu Button */}
-                  <div className="mobile-menu-toggle d-xl-none">
+                  <div className="mobile-menu-toggle d-xl-none " onClick={() => this.setState({
+                    mobileOpen: !this.state.mobileOpen
+                  })}>
                     <a
                       href="#ltn__utilize-mobile-menu"
-                      className="ltn__utilize-toggle"
+                      className={this.state.mobileOpen ? "ltn__utilize-toggle close" : "ltn__utilize-toggle"}
+                    
                     >
                       <svg viewBox="0 0 800 600">
                         <path
@@ -173,8 +183,8 @@ class NavbarV2 extends Component {
           {/* ltn__header-middle-area end */}
         </header>
         <div
-          id="ltn__utilize-mobile-menu"
-          className="ltn__utilize ltn__utilize-mobile-menu"
+
+          className={this.state.mobileOpen ? "ltn__utilize ltn__utilize-mobile-menu ltn__utilize-open" : "ltn__utilize ltn__utilize-mobile-menu"}
         >
           <div className="ltn__utilize-menu-inner ltn__scrollbar">
             <div className="ltn__utilize-menu-head">
@@ -183,7 +193,7 @@ class NavbarV2 extends Component {
                   <img src={publicUrl + "assets/img/logo.png"} alt="Logo" />
                 </Link>
               </div>
-              <button className="ltn__utilize-close">×</button>
+              <button className="ltn__utilize-close" onClick={()=>this.setState({mobileOpen:!this.state.mobileOpen})}>×</button>
             </div>
             <div className="ltn__utilize-menu-search-form">
               <form action={"#"}>
