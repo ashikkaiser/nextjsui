@@ -160,7 +160,7 @@ class NavbarV2 extends Component {
                     <a
                       href="#ltn__utilize-mobile-menu"
                       className={this.state.mobileOpen ? "ltn__utilize-toggle close" : "ltn__utilize-toggle"}
-                    
+
                     >
                       <svg viewBox="0 0 800 600">
                         <path
@@ -193,7 +193,7 @@ class NavbarV2 extends Component {
                   <img src={publicUrl + "assets/img/logo.png"} alt="Logo" />
                 </Link>
               </div>
-              <button className="ltn__utilize-close" onClick={()=>this.setState({mobileOpen:!this.state.mobileOpen})}>×</button>
+              <button className="ltn__utilize-close" onClick={() => this.setState({ mobileOpen: !this.state.mobileOpen })}>×</button>
             </div>
             <div className="ltn__utilize-menu-search-form">
               <form action={"#"}>
@@ -205,205 +205,32 @@ class NavbarV2 extends Component {
             </div>
             <div className="ltn__utilize-menu">
               <ul>
-                <li>
-                  <a href="#">Home</a>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link href="/">Home Style 01</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v2">Home Style 02</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v3">Home Style 03</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v4">Home Style 04</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v5">Home Style 05 </Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v6">Home Style 06</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v7">Home Style 07</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v8">Home Style 08</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v9">Home Style 09</Link>
-                    </li>
-                    <li>
-                      <Link href="/home-v10">Home Style 10</Link>
-                    </li>
-                  </ul>
+                <li className="menu-icon">
+                  <Link href="/">Home</Link>
+
                 </li>
-                <li>
+                <li className="menu-icon">
                   <Link href="/about">About</Link>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                      <Link href="/service">Services</Link>
-                    </li>
-                    <li>
-                      <Link href="/service-details">Service Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio-v2">Portfolio - 02</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio-details">Portfolio Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/team">Team</Link>
-                    </li>
-                    <li>
-                      <Link href="/team-details">Team Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/faq">FAQ</Link>
-                    </li>
-                    <li>
-                      <Link href="/location">Google Map Locations</Link>
-                    </li>
-                  </ul>
+
                 </li>
-                <li>
+                <li className="menu-icon">
                   <Link href="/shop">Shop</Link>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link href="/shop">Shop</Link>
-                    </li>
-                    <li>
-                      <Link href="/shop-grid">Shop Grid</Link>
-                    </li>
-                    <li>
-                      <Link href="/shop-left-sidebar">Shop Left sidebar</Link>
-                    </li>
-                    <li>
-                      <Link href="/shop-right-sidebar">Shop Right sidebar</Link>
-                    </li>
-                    <li>
-                      <Link href="/product-details">Shop Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/cart">Cart</Link>
-                    </li>
-                    <li>
-                      <Link href="/checkout">Checkout</Link>
-                    </li>
-                    <li>
-                      <Link href="/my-account">My Account</Link>
-                    </li>
-                    <li>
-                      <Link href="/login">Sign in</Link>
-                    </li>
-                    <li>
-                      <Link href="/register">Register</Link>
-                    </li>
-                  </ul>
+
                 </li>
-                <li>
-                  <Link href="/blog-grid">News</Link>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link href="/blog">News</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog-grid">News Grid</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog-left-sidebar">News Left sidebar</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog-right-sidebar">News Right sidebar</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog-details">News details</Link>
-                    </li>
-                  </ul>
+                <li className="menu-icon">
+                  <Link href="/product-details">Product Detials</Link>
                 </li>
-                <li>
-                  <Link href="#">Pages</Link>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                      <Link href="/service">Services</Link>
-                    </li>
-                    <li>
-                      <Link href="/service-details">Service Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio-2">Portfolio - 02</Link>
-                    </li>
-                    <li>
-                      <Link href="/portfolio-details">Portfolio Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/team">Team</Link>
-                    </li>
-                    <li>
-                      <Link href="/team-details">Team Details</Link>
-                    </li>
-                    <li>
-                      <Link href="/faq">FAQ</Link>
-                    </li>
-                    <li>
-                      <Link href="/history">History</Link>
-                    </li>
-                    <li>
-                      <Link href="/add-listing">Add Listing</Link>
-                    </li>
-                    <li>
-                      <Link href="/locations">Google Map Locations</Link>
-                    </li>
-                    <li>
-                      <Link href="/404">404</Link>
-                    </li>
-                    <li>
-                      <Link href="/contact">Contact</Link>
-                    </li>
-                    <li>
-                      <Link href="/coming-soon">Coming Soon</Link>
-                    </li>
-                  </ul>
-                </li>
+
+
                 <li>
                   <Link href="/contact">Contact</Link>
                 </li>
-              </ul>
-            </div>
-            <div className="ltn__utilize-buttons ltn__utilize-buttons-2">
-              <ul>
-                <li>
-                  <Link href="/my-account" title="My Account">
-                    My Account
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/wishlist" title="Wishlist">
-                    Wishlist
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/cart" title="Shoping Cart">
-                    Shoping Cart
-                  </Link>
+                <li className="special-link">
+                  <Link href="#">Add Listing</Link>
                 </li>
               </ul>
             </div>
+
             <div className="ltn__social-media-2">
               <ul>
                 <li>
