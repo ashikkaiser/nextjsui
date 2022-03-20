@@ -124,19 +124,19 @@ class NavbarV2 extends Component {
                     <nav>
                       <div className="ltn__main-menu">
                         <ul>
-                          <li className="menu-icon">
+                          <li >
                             <Link href="/">Home</Link>
 
                           </li>
-                          <li className="menu-icon">
+                          <li >
                             <Link href="/about">About</Link>
 
                           </li>
-                          <li className="menu-icon">
+                          <li >
                             <Link href="/shop">Shop</Link>
 
                           </li>
-                          <li className="menu-icon">
+                          <li >
                             <Link href="/product-details">Product Detials</Link>
                           </li>
 
@@ -205,19 +205,19 @@ class NavbarV2 extends Component {
             </div>
             <div className="ltn__utilize-menu">
               <ul>
-                <li className="menu-icon">
+                <li >
                   <Link href="/">Home</Link>
 
                 </li>
-                <li className="menu-icon">
+                <li >
                   <Link href="/about">About</Link>
 
                 </li>
-                <li className="menu-icon">
+                <li >
                   <Link href="/shop">Shop</Link>
 
                 </li>
-                <li className="menu-icon">
+                <li >
                   <Link href="/product-details">Product Detials</Link>
                 </li>
 
